@@ -1,0 +1,71 @@
+.two {
+	background: lightslategray;
+}
+
+.head {
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.block {
+	width: 200px;
+	height: 200px;
+	background: seagreen;
+	border-radius: 0px;
+	margin: 60px;
+	font-size: 20px;
+	transition: 1s;
+	animation: bob 7s ease 2s;
+}
+
+.nhead {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+.block img {
+	border-radius: 0px;
+}
+
+.block span {
+	color: darkgrey;
+	display: flex;
+	align-items: flex-end;
+}
+
+.block:hover {
+	transform: scale(1.2);
+}
+
+@keyframes bob {
+	0% {
+
+	}
+	14% {
+		background: red;
+	}
+	28% {
+		background: orange;
+	}
+	42% {
+		background: yellow;
+	}
+	57% {
+		background: green;
+	}
+	71% {
+		background: lightblue;
+	}
+	85% {
+		background: blue;
+	}
+	100% {
+		background: purple;
+		transform: scale(20) rotate();
+	}
+}
